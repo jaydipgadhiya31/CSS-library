@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="flex flex-wrap items-center justify-between bg-white p-4 border-b-2 border-gray-300">
+        <div class="flex items-center gap-4 flex-wrap w-full sm:w-auto justify-center sm:justify-start">
+            <img src="./veer_pic/veer logo png.png" alt="VIR Studio" class="h-14 w-12">
+            <div class="flex gap-2 overflow-x-auto">
+                <button class="flex items-center gap-2 px-4 py-2 border rounded-3xl text-gray-700">
+                    <img src="./veer_pic/living-room icon.png" alt="">
+                    <span class="font-bold flex items-center">Living Room <img src="./veer_pic/drop dwon icon.png"
+                            class="h-2 w-3 ml-2" alt=""></span>
+                </button>
+                <button class="flex items-center gap-2 px-4 py-2 border rounded-3xl text-gray-700">
+                    <img src="./veer_pic/tv room icon.png" alt="">
+                    <span class="font-bold flex items-center">TV Unit <img src="./veer_pic/drop dwon icon.png"
+                            class="h-2 w-3 ml-2" alt=""></span>
+                </button>
+            </div>
+        </div>
+        <button class="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-3xl mt-4 sm:mt-0">
+            <img src="./veer_pic/inquiry icon.png" alt="">
+            Inquiry
+        </button>
+    </header>
+
+    <div class="flex flex-col lg:flex-row">
+        <aside class="w-full lg:w-1/4 bg-white p-3 flex flex-col space-y-4 border-r-2 border-gray-300">
+            <h3 class="font-bold text-gray-700 mb-2">Material Category</h3>
+            <div class="border-b-2 border-gray-300 pb-4 flex flex-wrap gap-2">
+                <button class="px-3 py-1 text-sm border rounded-3xl">HPL</button>
+                <button class="px-3 py-1 text-sm bg-gray-700/25 border-2 border-gray-700 rounded-3xl">Compact</button>
+                <button class="px-3 py-1 text-sm border rounded-3xl">MDF</button>
+                <button class="px-3 py-1 text-sm border rounded-3xl">Plywood</button>
+                <button class="px-3 py-1 text-sm border rounded-3xl">PVC</button>
+                <button class="px-3 py-1 text-sm border rounded-3xl">WPC</button>
+            </div>
+            <div class="border-b-2 border-gray-300 pb-4">
+                <h3 class="font-bold text-gray-700 mb-4">Material Sub Category</h3>
+                <div class="flex flex-col gap-2">
+                    <button
+                        class="w-full px-3 py-2 text-sm bg-gray-700/25 border-2 border-gray-700 rounded-3xl text-left">Wood
+                        & Veneers</button>
+                    <button class="w-full px-3 py-2 text-sm border rounded-3xl text-left">Marble, Granite,
+                        Stone</button>
+                    <button class="w-full px-3 py-2 text-sm border rounded-3xl text-left">Solids & Uni Colors</button>
+                    <button class="w-full px-3 py-2 text-sm border rounded-3xl text-left">Leather & Textiles</button>
+                    <button class="w-full px-3 py-2 text-sm border rounded-3xl text-left">Abstracts & Fantasies</button>
+                    <button class="w-full px-3 py-2 text-sm border rounded-3xl text-left">Exterior Cladding
+                        Panels</button>
+                    <button class="w-full px-3 py-2 text-sm border rounded-3xl text-left">Kitchen Tops</button>
+                    <button class="w-full px-3 py-2 text-sm border rounded-3xl text-left">DIY Tops</button>
+                    <button class="w-full px-3 py-2 text-sm border rounded-3xl text-left">Panels, Partitions,
+                        Cubicles</button>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <button class="text-black font-bold text-sm">Clear all</button>
+                <button class="text-white font-semibold bg-gray-800 px-3 py-2 rounded-3xl text-sm">Show 2
+                    Materials</button>
+            </div>
+        </aside>
+
+        <!-- showing 105 products -->
+        <div class="w-[20%] m-3 sm:max-lg:w-[100%]">
+            <div class=" items-center border border-[#D0D0D0]  rounded-full px-4 py-2 flex">
+                <span class="text-gray-500"><img class="h-7 w-7" src="./veer_pic/search iocn.png" alt=""></span>
+                <input type="text" placeholder="Search here..." class="bg-transparent w-full focus:outline-none pl-2">
+            </div>
+            <p class="mt-4 ml-2 text-black font-bold text-base">Showing 105 products</p>
+            <!-- products -->
+            <div class="w-full max-w-[151px] mt-4 space-y-5 flex justify-center flex-col content-around">
+                <div class="flex justify-center flex-col content-around items-center">
+
+                    <div
+                        class="block bg-[url('./veer_pic/ex1.png')] bg-no-repeat bg-left-top w-full aspect-[151/134] bg-gray-100 rounded-lg p-4 relative">
+                        <div class="flex justify-between items-center -mt-2">
+                            <p class="bottom-28 left-4 bg-white py-[2px] px-2 rounded-xl inline-block">
+                                15630
+                            </p>
+                            <img src="./veer_pic/info 1.png" alt="" class="w-[20px] h-[20px]">
+                        </div>
+                    </div>
+
+                    <p class="text-center font-semibold mt-2">Woodgrains</p>
+
+                </div>
+            </div>
+            <div class="w-full max-w-[151px] mt-4 space-y-5 flex justify-center flex-col content-around">
+                <div class="flex justify-center flex-col content-around items-center">
+
+                    <div
+                        class="block bg-[url('./veer_pic/ex1.png')] bg-no-repeat bg-left-top w-full aspect-[151/134] bg-gray-100 rounded-lg p-4 relative">
+                        <div class="flex justify-between items-center -mt-2">
+                            <p class="bottom-28 left-4 bg-white py-[2px] px-2 rounded-xl inline-block">
+                                10023
+                            </p>
+                            <img src="./veer_pic/info 1.png" alt="" class="w-[20px] h-[20px]">
+                        </div>
+                    </div>
+
+                    <p class="text-center font-semibold mt-2">Armour External Wall</p>
+
+                </div>
+            </div>
+            <div class="w-full max-w-[151px] mt-4 space-y-5 flex justify-center flex-col content-around">
+                <div class="flex justify-center flex-col content-around items-center">
+
+                    <div
+                        class="block bg-[url('./veer_pic/ex1.png')] bg-no-repeat bg-left-top w-full aspect-[151/134] bg-gray-100 rounded-lg p-4 relative">
+                        <div class="flex justify-between items-center -mt-2">
+                            <p class="bottom-28 left-4 bg-white py-[2px] px-2 rounded-xl inline-block">
+                                15630
+                            </p>
+                            <img src="./veer_pic/info 1.png" alt="" class="w-[20px] h-[20px]">
+                        </div>
+                    </div>
+
+                    <p class="text-center font-semibold mt-2">Woodgrains</p>
+
+                </div>
+            </div>
+            <!-- <div class="bg-gray-100  rounded-lg p-2">
+                    <img src="./veer_pic/exaple 2.png" alt="Dark Wood Texture" class="w-full rounded-md">
+                    <div class=" relative">
+                        <p class="absolute bottom-28 left-4 bg-white py-[2px] px-2 rounded-xl">10023</p>
+                        <img class=" absolute  bottom-[115px] left-36" src="./veer_pic/info 1.png " alt="">
+                    </div>
+                    <p class="text-center font-semibold mt-2">Armour External Wall</p>
+                </div>
+                <div class="bg-gray-100  rounded-lg p-2">
+                    <img src="./veer_pic/ex1.png" alt="Wood Texture" class="w-full rounded-md">
+                    <div class=" relative">
+                        <p class="absolute bottom-28 left-4 bg-white py-[2px] px-2 rounded-xl">15630</p>
+                        <img class=" absolute  bottom-[115px] left-36" src="./veer_pic/info 1.png " alt="">
+                    </div>
+                    <p class="text-center font-semibold mt-2">Woodgrains</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-2">
+                    <img src="./veer_pic/exaple 2.png" alt="Dark Wood Texture" class="w-full rounded-md">
+                    <div class=" relative">
+                        <p class="absolute bottom-28 left-4 bg-white py-[2px] px-2 rounded-xl">10023</p>
+                        <img class=" absolute  bottom-[115px] left-36" src="./veer_pic/info 1.png " alt="">
+                    </div>
+                    <p class="text-center font-semibold mt-2">Armour External Wall</p>
+                </div> -->
+            <!-- </div> -->
+        </div>
+        <!-- living romm image -->
+        <div class="relative w-full  max-w-4xl h-[600px] bg-black  overflow-hidden group ">
+            <img src="./veer_pic/living room model image  1.png" alt="Room View"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute top-4 left-4 flex space-x-2">
+                <a href="javascript:history.back()" class="bg-white p-2 rounded-lg shadow-lg"><img
+                        src="./veer_pic/back.png" alt=""></a>
+            </div>
+            <div class="absolute top-4 right-4 space-y-2">
+                <a href="room.png" target="_blank" class="bg-white p-2 rounded-lg block"><img src="./veer_pic/zoom icon.png"
+                        alt=""></a>
+                <a href="room.png" download="room.png" class="bg-white p-2 rounded-lg block"><img src="./veer_pic/download icon.png"
+                        alt=""></a>
+            </div>
+            <div class="absolute bottom-4 right-4  space-y-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                <p class="bg-white p-2 rounded-lg block"><img src="./veer_pic/+ iocon.png" alt=""></p>
+                <p class="bg-white p-2 rounded-lg block"><img src="./veer_pic/- icon 1.png" alt=""></p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
